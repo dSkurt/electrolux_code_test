@@ -1,7 +1,7 @@
 import SwiftUI
 
 extension ContentView {
-    final class ContentViewModel: ObservableObject {
+    final class ViewModel: ObservableObject {
         @Published private(set) var contentState: ContentState = .initial
         let dependencyContainer: DependencyContainer
         
@@ -23,7 +23,7 @@ extension ContentView {
     }
 }
 
-extension ContentView.ContentViewModel {
+extension ContentView.ViewModel {
     enum ContentState {
         case initial
         case loaded([Appliance])

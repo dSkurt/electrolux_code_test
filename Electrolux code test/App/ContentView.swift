@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var viewModel: ContentViewModel
+    @StateObject var viewModel: ViewModel
     var body: some View {
         VStack(alignment: .center) {
             switch viewModel.contentState {
