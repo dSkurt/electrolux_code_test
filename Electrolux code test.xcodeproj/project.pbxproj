@@ -15,6 +15,8 @@
 		0D480CCB29F2AA2400975570 /* Appliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D480CCA29F2AA2400975570 /* Appliance.swift */; };
 		0D480CCE29F2B90F00975570 /* ElectroluxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D480CCD29F2B90F00975570 /* ElectroluxService.swift */; };
 		0DC5EC1029F2D58900558456 /* RemoteControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5EC0F29F2D58900558456 /* RemoteControlView.swift */; };
+		0DC5EC1329F5928C00558456 /* ApplianceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5EC1229F5928C00558456 /* ApplianceListView.swift */; };
+		0DC5EC1529F594FC00558456 /* ContentView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5EC1429F594FC00558456 /* ContentView+ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0D480CCA29F2AA2400975570 /* Appliance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appliance.swift; sourceTree = "<group>"; };
 		0D480CCD29F2B90F00975570 /* ElectroluxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxService.swift; sourceTree = "<group>"; };
 		0DC5EC0F29F2D58900558456 /* RemoteControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlView.swift; sourceTree = "<group>"; };
+		0DC5EC1229F5928C00558456 /* ApplianceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplianceListView.swift; sourceTree = "<group>"; };
+		0DC5EC1429F594FC00558456 /* ContentView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +64,9 @@
 		0D480CB729F2A9C600975570 /* Electrolux code test */ = {
 			isa = PBXGroup;
 			children = (
-				0DC5EC1129F58C6200558456 /* View */,
+				0DC5EC1129F58C6200558456 /* Views */,
 				0D480CCC29F2B8F700975570 /* Service */,
-				0D480CB829F2A9C600975570 /* Electrolux_code_testApp.swift */,
-				0D480CBA29F2A9C600975570 /* ContentView.swift */,
-				0DC5EC0F29F2D58900558456 /* RemoteControlView.swift */,
+				0DC5EC1629F59BA700558456 /* App */,
 				0D480CBC29F2A9C700975570 /* Assets.xcassets */,
 				0D480CBE29F2A9C700975570 /* Electrolux_code_test.entitlements */,
 				0D480CBF29F2A9C700975570 /* Preview Content */,
@@ -98,11 +100,23 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		0DC5EC1129F58C6200558456 /* View */ = {
+		0DC5EC1129F58C6200558456 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0DC5EC1229F5928C00558456 /* ApplianceListView.swift */,
+				0DC5EC0F29F2D58900558456 /* RemoteControlView.swift */,
 			);
-			path = View;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0DC5EC1629F59BA700558456 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0D480CB829F2A9C600975570 /* Electrolux_code_testApp.swift */,
+				0D480CBA29F2A9C600975570 /* ContentView.swift */,
+				0DC5EC1429F594FC00558456 /* ContentView+ViewModel.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,11 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC5EC1329F5928C00558456 /* ApplianceListView.swift in Sources */,
 				0D480CCB29F2AA2400975570 /* Appliance.swift in Sources */,
 				0D480CBB29F2A9C600975570 /* ContentView.swift in Sources */,
 				0DC5EC1029F2D58900558456 /* RemoteControlView.swift in Sources */,
 				0D480CCE29F2B90F00975570 /* ElectroluxService.swift in Sources */,
 				0D480CB929F2A9C600975570 /* Electrolux_code_testApp.swift in Sources */,
+				0DC5EC1529F594FC00558456 /* ContentView+ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

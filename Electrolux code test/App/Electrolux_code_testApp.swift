@@ -15,7 +15,6 @@ struct Electrolux_code_testApp: App {
 
 struct DependencyContainer {
     let serviceClient: ElectroluxServiceClient
-    
     init() {
         serviceClient = ElectroluxServiceClient()
     }

@@ -1,6 +1,4 @@
 struct Appliance: Codable, Hashable {
-    
-    
     let applianceId: String
     let applianceData: ApplianceData
     let properties: ApplianceProperties
@@ -39,7 +37,7 @@ enum Temperature: String, Codable {
 
 enum ApplianceState: String, Codable {
     case off = "READY_TO_START"
-    
+
     var description: String {
         switch self {
         case .off:
